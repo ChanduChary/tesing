@@ -1,0 +1,8 @@
+----
+- hosts: 172.31.84.180
+  roles:
+    - chandu.httpd
+    - chandu.ntpd
+  tasks:
+    - git: repo=https://github.com/demoglot/html-samples-food.git dest=/var/www/html
+
